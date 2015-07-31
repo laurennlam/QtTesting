@@ -285,7 +285,7 @@ void pqEventTranslator::onRecordEvent(QObject* Object,
   if(this->Implementation->IgnoredObjects.contains(Object))
   {
     QRegExp commandFilter = this->Implementation->IgnoredObjects.value(Object);
-    if(Command.contains(commandFilter))
+    if(Arguments.contains(commandFilter))
     {
       return;
     }

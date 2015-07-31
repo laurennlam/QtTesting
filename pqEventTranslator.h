@@ -87,7 +87,8 @@ public:
   /// translating events which command is equivalent to the regexp
   /// (useful to prevent recording UI events from being
   /// captured as part of the recording)
-  void ignoreObject(QObject* object, QRegExp commandFilter = QRegExp("*", Qt::CaseInsensitive, QRegExp::Wildcard));
+  void ignoreObject(QObject* object,
+    QRegExp commandFilter = QRegExp("*", Qt::CaseInsensitive, QRegExp::Wildcard));
 
   /// start listening to the GUI and translating events
   void start();
